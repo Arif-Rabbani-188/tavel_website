@@ -1,11 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jadoo</title>
+    <!-- Import DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <!-- Import Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Import Font Awesome -->
+    <script src="https://kit.fontawesome.com/b52fa5c686.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    
+    <header class="mb-30 bg-gradient-to-t from-[#EFEBE3] to-white text-white pb-20">
+        <div
+            class="flex justify-between items-center p-2 md:w-5/6 mx-auto py-5 border-b-[1px] border-[#f1a501] md:border-none">
+            <div class="flex lg:hidden items-center justify-between gap-5 w-full">
+                <a class="text-3xl text-black font-bold" href="#">Travel</a>
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost">
+                        <i class="fa-solid fa-bars text-black flex lg:hidden text-3xl"></i>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-gray-300 rounded-lg z-[1] mr-36 md:mr-0 w-52 p-2 shadow text-black text-xl mt-56 ">
+                            <li><a>Desitnations</a></li>
+                            <li>
+                                <a>Hotels</a>
+                            </li>
+                            <li><a>Flights</a></li>
+                            <li><a>Bookings </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="items-center justify-between gap-5 hidden lg:flex">
+                <a class="text-3xl text-black font-bold" href="#">Travel</a>
+                <i class="fa-solid fa-bars text-black flex lg:hidden text-3xl"></i>
+            </div>
+            <div class="text-black font-bold hidden lg:flex">
+                <nav class="flex gap-10">
+                    <a class="link link-hover">Desitnations </a>
+                    <a class="link link-hover">Hotels</a>
+                    <a class="link link-hover">Flights</a>
+                    <a class="link link-hover">Bookings </a>
+                </nav>
+            </div>
+            <div class="hidden gap-5 lg:flex items-center">
+                <a class="btn bg-white" href="#">Login</a>
+                <a class="btn border-[1px] border-black " href="#">Sign Up</a>
+            </div>
+        </div>
+        <section class="text-black text-center md:text-left w-full md:w-4/5 mx-auto flex flex-col-reverse md:flex-row  gap-10 p-5">
+            <div class="w-full md:w-1/2 lg:w-1/3 flex flex-col gap-5 justify-center items-center md:items-start">
+                <p class="text-lg font-bold text-orange-600">BEST DESTINATION AROUND THE WORLD</p>
+                <h1 class="text-5xl md:text-6xl font-bold">Travel, enjoy, <br> and live a new and full life</h1>
+                <p class="text-gray-500">Built Wiicket longer admire do barton vanity. Itself do in it. preffer to
+                    sportmen it engrossed
+                    listening. Park gate sell they west hand for the...</p>
+                <div class="flex gap-10">
+                    <a class="btn bg-[#f1a501] text-white" href="#">Find out more</a>
+                    <a class="btn" href="#">Play Demo</a>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 flex items-center justify-center">
+                <img class="w-full" src="assets/top-banner.png" alt="">
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="w-4/5 mx-auto my-24">
+            <p class="text-xl text-gray-500 text-center mb-7">CATEGORY</p>
+            <h1 class="text-4xl font-bold text-center">We Offer Best Services</h1>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 my-20">
+                <div class="card text-center flex flex-col gap-5 items-center shadow-lg p-5 py-10">
+                    <div class="h-1/2 w-1/2 flex items-center justify-center">
+                        <img class="w-3/4" src="assets/antena.png" alt="">
+                    </div>
+                    <h1 class="text-lg font-bold">Calculate Weather</h1>
+                    <p class="text-sm text-gray-500">Get the latest weather updates and plan your trip accordingly</p>
+                </div>
+                <div class="card text-center flex flex-col gap-5 items-center shadow-lg p-5 py-10">
+                    <div class="h-1/2 w-1/2 flex items-center justify-center">
+                        <img class="w-full" src="assets/plane.jpg" alt="">
+                    </div>
+                    <h1 class="text-lg font-bold">Best Flights</h1>
+                    <p class="text-sm text-gray-500">Get the latest weather updates and plan your trip accordingly</p>
+                </div>
+                <div class="card text-center flex flex-col gap-5 items-center shadow-lg p-5 py-10">
+                    <div class="h-1/2 w-1/2 flex items-center justify-center">
+                        <img class="w-full" src="assets/microphone.jpg" alt="">
+                    </div>
+                    <h1 class="text-lg font-bold">Local Eventsr</h1>
+                    <p class="text-sm text-gray-500">Get the latest weather updates and plan your trip accordingly</p>
+                </div>
+                <div class="card text-center flex flex-col gap-5 items-center shadow-lg p-5 py-10">
+                    <div class="h-1/2 w-1/2 flex items-center justify-center">
+                        <img class="w-full" src="assets/gear.jpg" alt="">
+                    </div>
+                    <h1 class="text-lg font-bold">Customization</h1>
+                    <p class="text-sm text-gray-500">Get the latest weather updates and plan your trip accordingly</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="w-4/5 mx-auto my-24">
+            <p class="text-xl text-gray-500 text-center mb-7">Top Selling</p>
+            <h1 class="text-4xl font-bold text-center">Top Destinations</h1>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 my-20">
+                <div class="card shadow-lg">
+                    <img class="h-3/4 rounded-2xl" src="assets/rome.jpg" alt="">
+                    <div class="py-5 px-2 lg:px-5 space-y-3">
+                        <div class="flex justify-between">
+                            <h1 class="font-bold text-lg">Rome, Italy</h1>
+                            <p class="font-bold text-lg">$5.42k</p>
+                        </div>
+                        <i class="fa-solid fa-location-dot text-sm"> 10 Days Trip</i>
+                    </div>
+                </div>
+                <div class="card shadow-2xl">
+                    <img class="h-3/4 rounded-lg" src="assets/london.jpg" alt="">
+                    <div class="py-5 px-2 lg:px-5 space-y-3">
+                        <div class="flex justify-between">
+                            <h1 class="font-bold text-lg">London, UK</h1>
+                            <p class="font-bold text-lg">$4.2k</p>
+                        </div>
+                        <i class="fa-solid fa-location-dot text-sm"> 12 Days Trip</i>
+                    </div>
+                </div>
+                <div class="card shadow-2xl">
+                    <img class="h-3/4 rounded-lg" src="assets/europe.jpg" alt="">
+                    <div class="py-5 px-2 lg:px-5 space-y-3">
+                        <div class="flex justify-between">
+                            <h1 class="font-bold text-lg">Full Europe</h1>
+                            <p class="font-bold text-lg">$15k</p>
+                        </div>
+                        <i class="fa-solid fa-location-dot text-sm"> 10 Days Trip</i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>
